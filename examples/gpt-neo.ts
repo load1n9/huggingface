@@ -5,6 +5,6 @@ const model = new Inference({
   token: Deno.env.get("HUGGINGFACE_TOKEN")!,
 });
 
-const output = await model.run("The meaning of life is");
+const output = await model.run({ inputs: "The meaning of life is" });
 
 console.log(output[0].generated_text);

@@ -1,12 +1,13 @@
 import { Inference } from "../mod.ts";
 
 const model = new Inference({
-  model: "distilbert-base-uncased",
+  model: "distilgpt2",
   token: Deno.env.get("HUGGINGFACE_TOKEN")!,
 });
 
 const output = await model.run({
-  inputs: "The answer to the universe is [MASK].",
+  inputs: "The meaning of life is",
+  wait_for_model: true,
 });
 
-console.log(output[0].sequence);
+console.log(output[0].generated_text);
