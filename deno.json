@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "example_gpt_neo": "deno run -A --unstable examples/gpt-neo.ts",
+    "example_distilbert": "deno run -A --unstable examples/distilbert.ts"
+  }
+}
