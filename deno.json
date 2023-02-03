@@ -2,6 +2,7 @@
   "tasks": {
     "example_gpt_neo": "deno run -A --unstable examples/gpt-neo.ts",
     "example_gpt2": "deno run -A --unstable examples/gpt2.ts",
-    "example_distilbert": "deno run -A --unstable examples/distilbert.ts"
+    "example_distilbert": "deno run -A --unstable examples/distilbert.ts",
+    "example_whisper": "deno run -A --unstable examples/whisper.ts"
   }
 }

@@ -7,6 +7,9 @@ const model = new Inference({
 
 const output = await model.run({
   inputs: "The meaning of life is",
+  options: {
+    wait_for_model: true
+  }
 });
 
 console.log(output[0].generated_text);

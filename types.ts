@@ -9,7 +9,13 @@ export interface InferenceSchema {
   /**
    * a string to be summarized
    */
-  inputs: string;
+  // deno-lint-ignore no-explicit-any
+  inputs: string | any;
+
+  /**
+   * optional custom endpoint
+   */
+  url?: string;
 
   /**
    * extra optional parameters
