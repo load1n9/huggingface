@@ -1,5 +1,7 @@
 {
   "tasks": {
+    "build_wasm": "cd tokenizers && deno run -A --unstable scripts/build.ts tokenizers && cd ..",
+    "example_tokenizer": "deno run -A --unstable examples/tokenizer.ts",
     "example_gpt_neo": "deno run -A --unstable examples/gpt-neo.ts",
     "example_gpt2": "deno run -A --unstable examples/gpt2.ts",
     "example_distilbert": "deno run -A --unstable examples/distilbert.ts",

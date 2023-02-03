@@ -1,6 +1,6 @@
 # huggingface deno
 
-Huggingface api for deno
+Huggingface api for deno + wasm tokenizers
 
 ## Usage
 
