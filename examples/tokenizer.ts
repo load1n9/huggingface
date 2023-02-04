@@ -1,4 +1,4 @@
-import { AutoTokenizer } from "../tokenizers/mod.ts";
+import { AutoTokenizer } from "https://deno.land/x/huggingface/tokenizers/mod.ts";
 
 const tokenizer = await AutoTokenizer.fromPretrainedLocal(
   "examples/assets/t5-base-tokenizer.json",

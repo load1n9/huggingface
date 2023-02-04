@@ -1,9 +1,9 @@
-import { Inference } from "../mod.ts";
-import { AutoTokenizer } from "../tokenizers/mod.ts";
+import { AutoModel } from "https://deno.land/x/huggingface/mod.ts";
+import { AutoTokenizer } from "https://deno.land/x/huggingface/tokenizers/mod.ts";
 
 const tokenizer = await AutoTokenizer.fromPretrained("t5-base");
 
-const model = new Inference({
+const model = new AutoModel({
   model: "t5-base",
   token: Deno.env.get("HUGGINGFACE_TOKEN")!,
 });

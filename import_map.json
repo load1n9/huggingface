@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "https://deno.land/x/huggingface/mod.ts": "./mod.ts",
+    "https://deno.land/x/huggingface/tokenizers/mod.ts": "./tokenizers/mod.ts"
+  }
+}

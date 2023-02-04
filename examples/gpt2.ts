@@ -1,6 +1,6 @@
-import { Inference } from "../mod.ts";
+import { AutoModel } from "https://deno.land/x/huggingface/mod.ts";
 
-const model = new Inference({
+const model = new AutoModel({
   model: "distilgpt2",
   token: Deno.env.get("HUGGINGFACE_TOKEN")!,
 });

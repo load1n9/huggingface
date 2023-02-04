@@ -1,11 +1,11 @@
-export type InferenceModel = string;
+export type ModelModel = string;
 
-export interface InferenceConfig {
+export interface ModelConfig {
   token: string;
-  model: InferenceModel;
+  model: ModelModel;
 }
 
-export interface InferenceSchema {
+export interface ModelSchema {
   /**
    * a string to be summarized
    */
@@ -57,6 +57,8 @@ export interface InferenceSchema {
      *  Float (0-120.0). The amount of time in seconds that the query should take maximum. Network can cause some overhead so it will be a soft limit.
      */
     max_time?: number;
+    // deno-lint-ignore no-explicit-any
+    [key: string]: any;
   };
 
   /**
@@ -76,5 +78,7 @@ export interface InferenceSchema {
      * It is advised to only set this flag to true after receiving a 503 error as it will limit hanging in your application to known places.
      */
     wait_for_model?: boolean;
+    // deno-lint-ignore no-explicit-any
+    [key: string]: any;
   };
 }

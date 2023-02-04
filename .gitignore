@@ -2,3 +2,4 @@ pkg
 target
 Cargo.lock
 deno.lock
+stable-diffusion.jpeg
